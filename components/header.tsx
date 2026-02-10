@@ -20,7 +20,7 @@ export function Header() {
             className="h-10 w-10"
           />
           <div className="flex flex-col">
-            <span className="text-xl font-semibold tracking-tight text-foreground">赛芒</span>
+            <span className="text-xl font-semibold tracking-widest text-foreground">赛芒</span>
             <span className="text-xs text-muted-foreground">Tech Brings Better Life</span>
           </div>
         </Link>
