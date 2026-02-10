@@ -94,8 +94,8 @@
 }
 
 @theme inline {
-  --font-sans: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Geist', sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: var(--font-geist-sans), 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
   --font-brand: 'Imprint MT Shadow', 'Times New Roman', serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
