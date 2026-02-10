@@ -49,7 +49,7 @@ export function Showcase() {
               探索生命早期发育的奥秘
             </h2>
             <p className="mt-3 text-pretty text-base leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
-              <span className="font-(--font-brand)">GenesisScope<sup className="text-xs align-super">®</sup></span> 时差成像系统面向胚胎发育相关的科研与教学场景，通过连续、低干扰的影像采集与数据分析，为研究人员提供深入理解胚胎早期发育过程的技术工具，助力发育生物学研究、培养条件优化及胚胎工程应用。
+              <span className="font-(--font-brand)">GenesisScope<sup className="text-sm" style={{verticalAlign: 'super', lineHeight: 1}}>®</sup></span> 时差成像系统面向胚胎发育相关的科研与教学场景，通过连续、低干扰的影像采集与数据分析，为研究人员提供深入理解胚胎早期发育过程的技术工具，助力发育生物学研究、培养条件优化及胚胎工程应用。
             </p>
             <div className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
               {applications.map((app, index) => (
