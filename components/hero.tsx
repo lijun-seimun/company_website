@@ -12,7 +12,7 @@ export function Hero() {
         <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
           <div className="flex flex-col items-start">
             <h1 className="text-balance font-bold tracking-tight text-foreground">
-              <span className="font-(--font-brand) text-2xl sm:text-4xl lg:text-5xl">GenesisScope<sup className="text-lg sm:text-2xl lg:text-3xl align-super">®</sup></span>
+              <span className="font-(--font-brand) text-2xl sm:text-4xl lg:text-5xl">GenesisScope<span className="text-2xl sm:text-4xl lg:text-5xl">®</span></span>
               <span className="mt-2 block text-2xl font-bold text-primary sm:mt-3 sm:text-4xl lg:text-5xl">
                 胚胎发育实时监控系统
               </span>
