@@ -36,7 +36,7 @@ export function Features() {
             胚胎发育分析的完整解决方案
           </h2>
           <p className="mx-auto mt-3 max-w-3xl text-pretty text-base text-muted-foreground sm:mt-4 sm:text-lg">
-            <span className="font-(--font-brand)">GenesisScope<sup className="text-sm" style={{verticalAlign: 'super', lineHeight: 1}}>®</sup></span> 通过精密成像设备、智能控制器、专业分析软件及定制培养皿的深度集成，构建了一套面向胚胎科研与畜牧繁育的端到端发育观测与数据分析完整解决方案。
+            <span className="font-(--font-brand)">GenesisScope<sup className="text-base" style={{verticalAlign: 'super', lineHeight: 0}}>®</sup></span> 通过精密成像设备、智能控制器、专业分析软件及定制培养皿的深度集成，构建了一套面向胚胎科研与畜牧繁育的端到端发育观测与数据分析完整解决方案。
           </p>
         </div>
 
