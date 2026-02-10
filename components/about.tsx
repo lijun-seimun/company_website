@@ -4,17 +4,17 @@ import { Mail, Phone, MapPin, Headphones, Clock, FileText, Building2, Target, Us
 
 export function About() {
   return (
-    <section id="about" className="relative bg-gradient-to-b from-background to-secondary/30 py-16 sm:py-20">
+    <section id="about" className="relative bg-gradient-to-b from-background to-secondary/30 py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             关于我们
           </h2>
         </div>
 
         {/* Company Introduction */}
-        <div className="mt-12 grid gap-8 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-8 lg:grid-cols-3">
           <div className="group rounded-xl border border-border bg-card p-6 text-center shadow-sm transition-all hover:border-primary/30 hover:shadow-lg">
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-primary/20 transition-transform group-hover:scale-110">
               <Building2 className="h-7 w-7 text-primary" />
@@ -47,9 +47,9 @@ export function About() {
         </div>
 
         {/* Contact & Support */}
-        <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="mt-10 grid gap-6 sm:mt-16 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Contact Info */}
-          <div className="flex flex-col rounded-2xl border border-border bg-muted/30 p-8">
+          <div className="flex flex-col rounded-2xl border border-border bg-muted/30 p-5 sm:p-8">
             <h3 className="text-xl font-bold text-foreground">联系我们</h3>
 
             <div className="mt-6 flex flex-1 flex-col justify-center space-y-5">
@@ -83,7 +83,7 @@ export function About() {
           </div>
 
           {/* Technical Support */}
-          <div className="flex flex-col rounded-2xl border border-border bg-muted/30 p-8">
+          <div className="flex flex-col rounded-2xl border border-border bg-muted/30 p-5 sm:p-8">
             <h3 className="text-xl font-bold text-foreground">技术支持</h3>
 
             <div className="mt-6 flex flex-1 flex-col justify-center space-y-5">

@@ -67,24 +67,24 @@ export function SoftwareDetail() {
   ]
 
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <section className="bg-muted/30 py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             监控软件
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-3xl text-pretty text-base leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
             集设备管理、参数设定和时差成像项目控制于一体，是您轻松驾驭整个系统的智能中枢
           </p>
         </div>
 
         {/* Main Features */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 sm:grid-cols-3">
           {mainFeatures.map((feature, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 rounded-xl border border-border bg-card p-5"
+              className="flex items-start gap-3 rounded-xl border border-border bg-card p-4 sm:gap-4 sm:p-5"
             >
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
                 <feature.icon className="h-5 w-5 text-primary" />
@@ -100,8 +100,8 @@ export function SoftwareDetail() {
         
 
         {/* Workflow Steps */}
-        <div className="mt-14">
-          <h3 className="text-center text-2xl font-bold tracking-tight text-foreground">
+        <div className="mt-10 sm:mt-14">
+          <h3 className="text-center text-xl font-bold tracking-tight text-foreground sm:text-2xl">
             人性化的无缝工作流程
           </h3>
 

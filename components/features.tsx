@@ -29,13 +29,13 @@ const components = [
 
 export function Features() {
   return (
-    <section id="features" className="bg-background py-16 sm:py-20">
+    <section id="features" className="bg-background py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             胚胎发育分析的完整解决方案
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-pretty text-lg text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-3xl text-pretty text-base text-muted-foreground sm:mt-4 sm:text-lg">
             <span className="font-(--font-brand)">GenesisScope<sup className="text-xs align-super">®</sup></span> 通过精密成像设备、智能控制器、专业分析软件及定制培养皿的深度集成，构建了一套面向胚胎科研与畜牧繁育的端到端发育观测与数据分析完整解决方案。
           </p>
         </div>
@@ -44,19 +44,19 @@ export function Features() {
           {components.map((component, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30 hover:shadow-md"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 transition-all hover:border-primary/30 hover:shadow-md sm:p-8"
             >
-              <div className="flex items-start gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                  <component.icon className="h-7 w-7 text-primary" />
+              <div className="flex items-start gap-3 sm:gap-5">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 sm:h-14 sm:w-14">
+                  <component.icon className="h-5 w-5 text-primary sm:h-7 sm:w-7" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-foreground">{component.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-base font-semibold text-foreground sm:text-lg">{component.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:mt-3">
                     {component.description}
                   </p>
-                  <div className="mt-4 rounded-lg bg-primary/5 px-4 py-3">
-                    <p className="text-sm font-medium text-primary">
+                  <div className="mt-3 rounded-lg bg-primary/5 px-3 py-2 sm:mt-4 sm:px-4 sm:py-3">
+                    <p className="text-xs font-medium text-primary sm:text-sm">
                       {component.highlight}
                     </p>
                   </div>

@@ -21,41 +21,41 @@ export function ControllerDetail() {
   ]
 
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <section className="bg-muted/30 py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             控制计算机
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-pretty text-lg text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-3xl text-pretty text-base text-muted-foreground sm:mt-4 sm:text-lg">
             作为系统的智能中枢，控制器集中协调多套成像设备的运行与数据采集，将复杂的多设备时差成像实验整合为稳定、高效的一体化流程。
           </p>
         </div>
 
         {/* Product Images */}
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
-          <div className="flex items-center justify-center overflow-hidden rounded-2xl bg-card p-4">
+        <div className="mt-10 grid gap-4 sm:mt-16 sm:gap-8 md:grid-cols-2">
+          <div className="flex items-center justify-center overflow-hidden rounded-2xl bg-card p-3 sm:p-4">
             <Image
               src="/images/controller-front.png"
               alt="GenesisScope控制单元计算机前面板"
               width={600}
               height={200}
-              className="h-auto max-h-48 w-auto object-contain"
+              className="h-auto w-full object-contain"
             />
           </div>
-          <div className="flex items-center justify-center overflow-hidden rounded-2xl bg-card p-4">
+          <div className="flex items-center justify-center overflow-hidden rounded-2xl bg-card p-3 sm:p-4">
             <Image
               src="/images/controller-rear.png"
               alt="GenesisScope控制单元计算机后面板"
               width={600}
               height={200}
-              className="h-auto max-h-48 w-auto object-contain"
+              className="h-auto w-full object-contain"
             />
           </div>
         </div>
 
         {/* Features */}
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:mt-16 sm:gap-8 md:grid-cols-3">
           {features.map((feature, index) => (
             <div
               key={index}

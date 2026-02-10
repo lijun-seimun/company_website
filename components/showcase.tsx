@@ -26,12 +26,12 @@ export function Showcase() {
   ]
 
   return (
-    <section id="applications" className="bg-muted/50 py-16 sm:py-20">
+    <section id="applications" className="bg-muted/50 py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-xl">
+              <div className="overflow-hidden rounded-xl border border-border bg-card shadow-xl sm:rounded-2xl">
                 <Image
                   src="/images/product-setup-2.png"
                   alt="GenesisScope系统工作站 - 监控软件与培养箱集成"
@@ -40,20 +40,20 @@ export function Showcase() {
                   className="h-auto w-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-3 -left-3 -z-10 h-full w-full rounded-2xl bg-primary/10" />
+              <div className="absolute -bottom-3 -left-3 -z-10 hidden h-full w-full rounded-2xl bg-primary/10 sm:block" />
             </div>
           </div>
 
           <div className="order-1 lg:order-2">
-            <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
               探索生命早期发育的奥秘
             </h2>
-            <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-3 text-pretty text-base leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
               <span className="font-(--font-brand)">GenesisScope<sup className="text-xs align-super">®</sup></span> 时差成像系统面向胚胎发育相关的科研与教学场景，通过连续、低干扰的影像采集与数据分析，为研究人员提供深入理解胚胎早期发育过程的技术工具，助力发育生物学研究、培养条件优化及胚胎工程应用。
             </p>
-            <div className="mt-8 space-y-4">
+            <div className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
               {applications.map((app, index) => (
-                <div key={index} className="flex gap-4 rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-md">
+                <div key={index} className="flex gap-3 rounded-lg border border-border bg-card p-3 transition-shadow hover:shadow-md sm:gap-4 sm:p-4">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <app.icon className="h-5 w-5 text-primary" />
                   </div>

@@ -58,21 +58,21 @@ export function CultureDishDetail() {
   ]
 
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <section className="bg-muted/30 py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: Content */}
           <div>
-            <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
               胚胎培养皿（12微孔）
             </h2>
 
             {/* Features Grid */}
-            <div className="mt-10 space-y-6">
+            <div className="mt-6 space-y-4 sm:mt-10 sm:space-y-6">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 rounded-xl border border-border bg-card p-4 transition-shadow hover:shadow-md"
+                  className="flex gap-3 rounded-xl border border-border bg-card p-3 transition-shadow hover:shadow-md sm:gap-4 sm:p-4"
                 >
                   <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <feature.icon className="h-6 w-6 text-primary" />
@@ -108,17 +108,17 @@ export function CultureDishDetail() {
             </div>
 
             {/* Specs Badge */}
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <div className="rounded-full border border-border bg-card px-4 py-2 text-center shadow-sm">
-                <p className="text-lg font-bold text-primary">38mm</p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4">
+              <div className="rounded-full border border-border bg-card px-3 py-1.5 text-center shadow-sm sm:px-4 sm:py-2">
+                <p className="text-base font-bold text-primary sm:text-lg">38mm</p>
                 <p className="text-xs text-muted-foreground">最大直径</p>
               </div>
-              <div className="rounded-full border border-border bg-card px-4 py-2 text-center shadow-sm">
-                <p className="text-lg font-bold text-primary">12</p>
+              <div className="rounded-full border border-border bg-card px-3 py-1.5 text-center shadow-sm sm:px-4 sm:py-2">
+                <p className="text-base font-bold text-primary sm:text-lg">12</p>
                 <p className="text-xs text-muted-foreground">独立微孔</p>
               </div>
-              <div className="rounded-full border border-border bg-card px-4 py-2 text-center shadow-sm">
-                <p className="text-lg font-bold text-primary">3×4</p>
+              <div className="rounded-full border border-border bg-card px-3 py-1.5 text-center shadow-sm sm:px-4 sm:py-2">
+                <p className="text-base font-bold text-primary sm:text-lg">{'3\u00D74'}</p>
                 <p className="text-xs text-muted-foreground">矩阵布局</p>
               </div>
             </div>
@@ -126,9 +126,9 @@ export function CultureDishDetail() {
         </div>
 
         {/* Safety Certifications Section */}
-        <div className="mt-24">
+        <div className="mt-12 sm:mt-24">
           <div className="text-center">
-            <h3 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl md:text-3xl">
               安全认证与检测标准
             </h3>
             <p className="mt-4 text-muted-foreground">
@@ -136,19 +136,19 @@ export function CultureDishDetail() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-4">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="group rounded-xl border border-border bg-card p-6 text-center transition-all hover:border-primary/30 hover:shadow-lg"
+                className="group rounded-xl border border-border bg-card p-4 text-center transition-all hover:border-primary/30 hover:shadow-lg sm:p-6"
               >
-                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
-                  <cert.icon className="h-7 w-7 text-primary" />
+                <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20 sm:mb-4 sm:h-14 sm:w-14">
+                  <cert.icon className="h-5 w-5 text-primary sm:h-7 sm:w-7" />
                 </div>
-                <h4 className="font-semibold text-foreground">{cert.title}</h4>
-                <p className="mt-2 text-sm text-muted-foreground">{cert.description}</p>
-                <div className="mt-4 rounded-lg bg-muted/50 px-3 py-2">
-                  <p className="text-lg font-bold text-primary">{cert.highlight}</p>
+                <h4 className="text-sm font-semibold text-foreground sm:text-base">{cert.title}</h4>
+                <p className="mt-1 hidden text-sm text-muted-foreground sm:mt-2 sm:block">{cert.description}</p>
+                <div className="mt-2 rounded-lg bg-muted/50 px-2 py-1.5 sm:mt-4 sm:px-3 sm:py-2">
+                  <p className="text-sm font-bold text-primary sm:text-lg">{cert.highlight}</p>
                   <p className="text-xs text-muted-foreground">{cert.highlightLabel}</p>
                 </div>
               </div>

@@ -59,17 +59,17 @@ export function ProductDetail() {
   ]
 
   return (
-    <section className="bg-background py-16 sm:py-20">
+    <section className="bg-background py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             成像设备
           </h2>
         </div>
 
         {/* Main Product Display */}
-        <div className="mt-16 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="mt-10 grid items-center gap-8 sm:mt-16 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative">
             <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-muted/30 to-background">
               <Image
@@ -112,9 +112,9 @@ export function ProductDetail() {
         </div>
 
         {/* Technical Specs Grid */}
-        <div className="mt-24 grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:mt-24 sm:gap-8 lg:grid-cols-2">
           {/* Compact Design */}
-          <div className="rounded-2xl border border-border bg-card p-8">
+          <div className="rounded-2xl border border-border bg-card p-5 sm:p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <Ruler className="h-5 w-5 text-primary" />
@@ -138,7 +138,7 @@ export function ProductDetail() {
           </div>
 
           {/* Low Power */}
-          <div className="rounded-2xl border border-border bg-card p-8">
+          <div className="rounded-2xl border border-border bg-card p-5 sm:p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <Zap className="h-5 w-5 text-primary" />
@@ -155,9 +155,9 @@ export function ProductDetail() {
               {powerFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="rounded-xl bg-muted/50 p-4 text-center"
+                  className="rounded-xl bg-muted/50 p-3 text-center sm:p-4"
                 >
-                  <p className="text-2xl font-bold text-primary">{feature.value}</p>
+                  <p className="text-lg font-bold text-primary sm:text-2xl">{feature.value}</p>
                   <p className="mt-1 text-sm font-medium text-foreground">{feature.label}</p>
                 </div>
               ))}

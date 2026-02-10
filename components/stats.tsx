@@ -11,9 +11,9 @@ export function Stats() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 divide-x divide-primary/10 lg:grid-cols-4">
           {stats.map((stat, index) => (
-            <div key={index} className="group px-4 py-8 text-center transition-all hover:bg-primary/5 sm:px-6 lg:py-10">
-              <p className="text-3xl font-bold text-primary transition-transform group-hover:scale-110 sm:text-4xl">{stat.value}</p>
-              <p className="mt-2 text-sm font-medium text-foreground">{stat.label}</p>
+            <div key={index} className="group px-2 py-6 text-center transition-all hover:bg-primary/5 sm:px-6 sm:py-8 lg:py-10">
+              <p className="text-2xl font-bold text-primary transition-transform group-hover:scale-110 sm:text-3xl md:text-4xl">{stat.value}</p>
+              <p className="mt-1 text-xs font-medium text-foreground sm:mt-2 sm:text-sm">{stat.label}</p>
             </div>
           ))}
         </div>

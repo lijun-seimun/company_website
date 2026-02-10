@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 export function Footer() {
   return (
     <footer className="border-t border-border bg-gradient-to-b from-background to-secondary/50">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* 公司信息 */}
           <div className="lg:col-span-2">
@@ -15,10 +15,10 @@ export function Footer() {
                 alt="赛芒 Logo"
                 width={40}
                 height={40}
-                className="h-10 w-10"
+                className="h-8 w-8 sm:h-10 sm:w-10"
               />
               <div className="flex flex-col">
-                <span className="text-lg font-semibold tracking-tight text-foreground">赛芒（北京）信息技术有限公司</span>
+                <span className="text-base font-semibold tracking-tight text-foreground sm:text-lg">赛芒（北京）信息技术有限公司</span>
                 <span className="text-xs text-muted-foreground">Tech Brings Better Life</span>
               </div>
             </Link>

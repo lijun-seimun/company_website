@@ -84,6 +84,20 @@ export function Header() {
             <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground">
               关于我们
             </Link>
+            <div className="flex items-center gap-1 border-t border-border pt-4">
+              <button
+                type="button"
+                className="rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground"
+              >
+                中文
+              </button>
+              <button
+                type="button"
+                className="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              >
+                EN
+              </button>
+            </div>
           </div>
         </div>
       )}

@@ -64,24 +64,24 @@ export function EmbryologistDetail() {
   ]
 
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <section className="bg-muted/30 py-12 sm:py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             胚胎学家 <span className="font-(--font-brand)">Embryologist</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-3xl text-pretty text-base leading-relaxed text-muted-foreground sm:mt-4 sm:text-lg">
             专为胚胎实验室研究人员量身打造的专业分析软件，将复杂的胚胎评估工作流程化、数据化，支持对发育过程的客观分析与科学决策。
           </p>
         </div>
 
         {/* Core Features Pills */}
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap justify-center gap-2 sm:mt-8 sm:gap-3">
           {coreFeatures.map((feature, index) => (
             <div
               key={index}
-              className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2"
+              className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 sm:gap-2 sm:px-4 sm:py-2"
             >
               <feature.icon className="h-4 w-4 text-primary" />
               <span className="text-sm font-medium text-foreground">{feature.label}</span>
@@ -90,8 +90,8 @@ export function EmbryologistDetail() {
         </div>
 
         {/* Software Screenshot - Smaller */}
-        <div className="mx-auto mt-12 max-w-4xl">
-          <div className="overflow-hidden rounded-xl border border-border bg-card shadow-lg">
+        <div className="mx-auto mt-8 max-w-4xl sm:mt-12">
+          <div className="overflow-hidden rounded-lg border border-border bg-card shadow-lg sm:rounded-xl">
             <Image
               src="/images/embryologist-software.png"
               alt="GenesisScope胚胎学家分析软件界面"
@@ -103,11 +103,11 @@ export function EmbryologistDetail() {
         </div>
 
         {/* All Features Grid */}
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:mt-16 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {allFeatures.map((feature, index) => (
             <div
               key={index}
-              className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-md"
+              className="group rounded-xl border border-border bg-card p-5 transition-all hover:border-primary/30 hover:shadow-md sm:p-6"
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <feature.icon className="h-6 w-6 text-primary" />
